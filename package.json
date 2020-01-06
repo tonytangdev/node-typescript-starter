@@ -1,0 +1,27 @@
+{
+  "name": "anime-tracker",
+  "version": "1.0.0",
+  "description": "Tracks anime using kiss-anime",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc-watch --onSuccess \"mocha\"",
+    "build": "tsc ./src",
+    "start": "tsc-watch --onFirstSuccess \"nodemon ./dist/index.js\""
+  },
+  "keywords": [
+    "anime",
+    "kiss-anime",
+    "tracker"
+  ],
+  "author": "tonytangdev",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^7.0.0",
+    "nodemon": "^2.0.2",
+    "tsc-watch": "^4.0.0",
+    "typescript": "^3.7.4"
+  },
+  "mocha": {
+    "spec": "./dist/test/**/*.js"
+  }
+}
