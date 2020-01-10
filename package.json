@@ -5,13 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "tsc-watch --onSuccess \"mocha\"",
-    "build": "tsc ./src",
-    "start": "tsc-watch --onFirstSuccess \"nodemon ./dist/index.js\""
+    "build": "tsc",
+    "start": "tsc-watch --onFirstSuccess \"nodemon ./dist/src/index.js\""
   },
   "keywords": [
-    "anime",
-    "kiss-anime",
-    "tracker"
   ],
   "author": "tonytangdev",
   "license": "ISC",
